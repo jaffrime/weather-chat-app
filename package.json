@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jaffrime/weather-chat-app#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "express": "^4.14.1",
     "font-awesome": "^4.7.0",
     "handlebars": "^4.0.6",
     "jquery": "^3.1.1"

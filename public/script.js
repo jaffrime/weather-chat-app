@@ -1,6 +1,7 @@
 // $(document).ready(function(){ // just to refresh
 $('#searchbtn').on('click', function(){
   var citySearch = $('#searchVal').val();
+  $('#searchVal').val("");
   $.ajax({
     method: "GET",
     // http://api.openweathermap.org/data/2.5/weather?q={city name},{country code}
