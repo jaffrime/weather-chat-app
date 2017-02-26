@@ -40,6 +40,15 @@
        <i class="fa fa-trash-o trashBtn" aria-hidden="true"></i>
        <h3> {{ city }} </h3>
        <p><span> {{ tempC }} °C / {{ tempF }} °F </span> @ {{ requestTime }} </p>
+
+       <div class = "comments-section"></div>
+
+       <div class = "input-group comments-input">
+          <input type = "text" class = "form-control commentVal" placeholder="Comment about the weather in {{ city }} ">
+          <span class = "input-group-btn">
+             <button class = "btn btn-success commentBtn" type = "button">Comment</button>
+          </span>
+       </div><!-- /input-group -->
      </div>
    </script>
 

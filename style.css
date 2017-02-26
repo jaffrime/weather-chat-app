@@ -18,3 +18,7 @@ body {
   float:right;
   color: red;
 }
+
+.comments-section {
+  margin-left: 15px;
+}

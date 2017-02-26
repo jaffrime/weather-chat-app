@@ -1,12 +1,12 @@
-// $(document).ready(function(){
+// $(document).ready(function(){ // just to refresh
 $('#searchbtn').on('click', function(){
   var citySearch = $('#searchVal').val();
   $.ajax({
     method: "GET",
     // http://api.openweathermap.org/data/2.5/weather?q={city name},{country code}
     // &appid=3cd94b4dd9f9500379beff57f6c3b579
-    url: "http://api.openweathermap.org/data/2.5/weather?q=telaviv&appid=3cd94b4dd9f9500379beff57f6c3b579",
-    // url: "http://api.openweathermap.org/data/2.5/weather?q="+citySearch+"&appid=3cd94b4dd9f9500379beff57f6c3b579",
+    // url: "http://api.openweathermap.org/data/2.5/weather?q=telaviv&appid=3cd94b4dd9f9500379beff57f6c3b579",
+    url: "http://api.openweathermap.org/data/2.5/weather?q="+citySearch+"&appid=3cd94b4dd9f9500379beff57f6c3b579",
     dataType: "json",
     success: function(data) {
       console.log(data);
@@ -39,4 +39,10 @@ var displayData = function(data) {
 
 $('.weather-display').on('click', '.trashBtn', function(){
   $(this).closest('.weatherData').remove();
+});
+
+$('.weather-display').on('click', '.commentBtn', function(){
+  var comment = $(this).closest('.comments-input').find('.commentVal').val();
+  $(this).closest('.weatherData').find('.comments-section').append('<p>'+comment+'</p>');
+  $(this).closest('.comments-input').find('.commentVal').val("");
 });
