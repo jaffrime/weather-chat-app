@@ -1,0 +1,19 @@
+{
+  "name": "weather-chat",
+  "version": "1.0.0",
+  "description": "weather chat app",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaffrime/weather-chat-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaffrime/weather-chat-app/issues"
+  },
+  "homepage": "https://github.com/jaffrime/weather-chat-app#readme"
+}
