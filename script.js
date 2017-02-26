@@ -1,9 +1,12 @@
+// $(document).ready(function(){
 $('#searchbtn').on('click', function(){
+  var citySearch = $('#searchVal').val();
   $.ajax({
     method: "GET",
     // http://api.openweathermap.org/data/2.5/weather?q={city name},{country code}
     // &appid=3cd94b4dd9f9500379beff57f6c3b579
-    url: "http://api.openweathermap.org/data/2.5/weather?q=telaviv&appid=d703871f861842b79c60988ccf3b17ec",
+    url: "http://api.openweathermap.org/data/2.5/weather?q=telaviv&appid=3cd94b4dd9f9500379beff57f6c3b579",
+    // url: "http://api.openweathermap.org/data/2.5/weather?q="+citySearch+"&appid=3cd94b4dd9f9500379beff57f6c3b579",
     dataType: "json",
     success: function(data) {
       console.log(data);
@@ -33,3 +36,7 @@ var displayData = function(data) {
   $('.weather-display').append(newHTML);
 
 };
+
+$('.weather-display').on('click', '.trashBtn', function(){
+  $(this).closest('.weatherData').remove();
+});

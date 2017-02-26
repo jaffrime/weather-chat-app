@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Weather Chat</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css "href="style.css"/>
@@ -35,8 +36,11 @@
    </div>
 
    <script id="weather-template" type="text/x-handlebars/template">
-     <h3> {{ city }} </h3>
-     <p><span> {{ tempC }} °C / {{ tempF }} °F </span> @ {{ requestTime }} </p>
+     <div class = "weatherData col-lg-6">
+       <i class="fa fa-trash-o trashBtn" aria-hidden="true"></i>
+       <h3> {{ city }} </h3>
+       <p><span> {{ tempC }} °C / {{ tempF }} °F </span> @ {{ requestTime }} </p>
+     </div>
    </script>
 
    <div>

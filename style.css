@@ -2,8 +2,19 @@ body {
   margin-left: 15px;
 }
 
-.weather-display {
-  width: 600px;
-  height: 100px;
+.weatherData {
   box-shadow: 0 4px 4px rgba(0,0,0,.25);
+  font-family: 'Raleway', sans-serif;
+  margin: 15px;
+  padding: 10px;
+}
+
+.weatherData span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.fa-trash-o {
+  float:right;
+  color: red;
 }
