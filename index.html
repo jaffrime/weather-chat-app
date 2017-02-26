@@ -14,6 +14,42 @@
   </head>
   <body>
 
+    <header>
+      <h1>Weather Chat App</h1>
+      <hr />
+    </header>
+
+    <div style = "padding: 20px 40px 10px;">
+     <form class = "bs-example bs-example-form" role = "form">
+        <div class = "row">
+           <div class = "col-lg-8">
+              <div class = "input-group">
+                 <input type = "text" class = "form-control" placeholder="Enter City" id="searchVal">
+                 <span class = "input-group-btn">
+                    <button class = "btn btn-primary" id="searchbtn" type = "button">Get Temp</button>
+                 </span>
+              </div><!-- /input-group -->
+           </div><!-- /.col-lg-8 -->
+        </div><!-- /.row -->
+     </form>
+   </div>
+
+   <script id="weather-template" type="text/x-handlebars/template">
+     <h3> {{ city }} </h3>
+     <p><span> {{ tempC }} °C / {{ tempF }} °F </span> @ {{ requestTime }} </p>
+   </script>
+
+   <div>
+     <div class = "row">
+       <div class = "col-lg-8">
+         <div class = "weather-display">
+
+         </div>
+       </div>
+     </div>
+   </div>
+
+
 
     <script type="text/javascript" src="script.js"></script>
   </body>
